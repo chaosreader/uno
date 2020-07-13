@@ -39,9 +39,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: mlister-assignment-3
-#steps:
-#  - name: ZAP Scan
-#    uses: zaproxy/action-full-scan@v0.1.0
-#    with:
-#      target: 'https://localhost/'
-
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@v0.1.0
+        with:
+          target: 'https://www.google.com/'
