@@ -38,6 +38,6 @@ jobs:
     name: Scan ZAP website
     steps:
     - name: ZAP Scan
-      uses: zaproxy/action-baseline@v0.3.0
-      with:
-        target: 'https://www.zaproxy.org/'
+    uses: zaproxy/action-baseline@v0.3.0
+    with:
+      target: 'https://localhost:3000'
