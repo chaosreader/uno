@@ -31,10 +31,17 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-
-steps:
-  - name: ZAP Scan
-    uses: zaproxy/action-full-scan@v0.1.0
-    with:
-      target: 'https://localhost/'
+  Zap:
+    runs-on: ubuntu-latest
+    name: Scan the webapplication
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: mlister-assignment-3
+#steps:
+#  - name: ZAP Scan
+#    uses: zaproxy/action-full-scan@v0.1.0
+#    with:
+#      target: 'https://localhost/'
 
